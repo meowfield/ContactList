@@ -10,7 +10,7 @@ import UIKit
 final class PersonsListViewController: UITableViewController {
     
     // MARK: - Public Properties
-    var contactList: [Person] = []
+    var contactList: [Person]!
 }
 
 // MARK: - UITableViewDataSource

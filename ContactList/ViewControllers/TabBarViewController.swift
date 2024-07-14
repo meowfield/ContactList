@@ -8,7 +8,7 @@
 import UIKit
 
 final class TabBarViewController: UITabBarController {
-    // MARK: Public Properties
+    // MARK: Private Properties
     private let contactList = Person.getPersonData()
     
     // MARK: Lifecycle Methods

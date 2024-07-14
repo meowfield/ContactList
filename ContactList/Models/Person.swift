@@ -22,14 +22,14 @@ struct Person {
         let phones = DataStore().phones.shuffled()
         let emails = DataStore().emails.shuffled()
         
-        var person: [Person] = []
+        var persons: [Person] = []
         
         for (index, name) in names.enumerated() {
             let surname = index < surnames.count ? surnames[index] : "Unknown"
             let phone = index < phones.count ? phones[index] : "N/A"
             let email = index < emails.count ? emails[index] : "N/A"
-            person.append(Person(name: name, surname: surname, phone: phone, email: email))
+            persons.append(Person(name: name, surname: surname, phone: phone, email: email))
         }
-        return person
+        return persons
     }
 }

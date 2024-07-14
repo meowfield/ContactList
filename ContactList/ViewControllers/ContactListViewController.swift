@@ -10,7 +10,7 @@ import UIKit
 final class ContactListViewController: UITableViewController {
     
     // MARK: - Public Properties
-    var contactList: [Person] = []
+    var contactList: [Person]!
     
     // MARK: - lifecycle Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
