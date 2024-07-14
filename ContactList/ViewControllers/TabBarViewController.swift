@@ -7,9 +7,9 @@
 
 import UIKit
 
-class TabBarViewController: UITabBarController {
+final class TabBarViewController: UITabBarController {
     // MARK: Public Properties
-    let contactList = Person.getPersonData()
+    private let contactList = Person.getPersonData()
     
     // MARK: Lifecycle Methods
     override func viewDidLoad() {
