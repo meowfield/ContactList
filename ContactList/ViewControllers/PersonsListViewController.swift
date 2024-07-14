@@ -23,10 +23,6 @@ extension PersonsListViewController {
         return contactList[section].fullname
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(
@@ -49,5 +45,12 @@ extension PersonsListViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         contactList.count
+    }
+}
+
+// MARK: - UITableViewDelegate
+extension PersonsListViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
